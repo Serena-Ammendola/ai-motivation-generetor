@@ -40,7 +40,6 @@ form {
   font-size: 16px;
   border-radius: 25px;
   line-height: 20px;
-  color: #3225a3;
 }
 .submit-button {
   margin-left: 10px;
@@ -55,6 +54,7 @@ form {
 .quotes {
   background-color: white;
   border-radius: 5px;
+  color: #247bc8;
   padding: 20px;
   font-size: 16px;
   line-height: 1.5;
