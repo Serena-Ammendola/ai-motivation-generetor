@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Special+Elite&display=swap"
     rel="stylesheet">
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   <link rel="stylesheet" href="src/style.css">
   <title>AI Motivational Generetor</title>
 </head>
@@ -21,7 +22,7 @@
     <main>
       <form id="quote-generetor">
         <input type="text" placeholder="Enter a word for a motivational quote here" required autofocus
-          class="instructions" />
+          class="instructions" id="user-instructions" />
         <input type="Submit" class="submit-button" />
       </form>
       <div class="quotes" id="quotes">
