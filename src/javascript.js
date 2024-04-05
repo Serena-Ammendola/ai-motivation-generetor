@@ -1,5 +1,4 @@
 function displayQuote(response) {
-  console.log("quote genereted");
   new Typewriter("#quotes", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,9 +18,10 @@ function generateQuote(event) {
   let prompt = `Generate a positive motivational quote about ${instructionInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("generate quote");
-  console.log(`Prompt:${prompt}`);
-  console.log(`Context:${context}`);
+  let quoteElement = document.querySelector("#quotes");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `⏳ Generating a motivational quote about ${instructionInput.value}`;
+
   axios.get(apiUrl).then(displayQuote);
 }
 
